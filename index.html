@@ -8,18 +8,116 @@
 </head>
 
 <body>
-    <h1>hello saad</h1>
-    <h1>abcd</h1>
-    <h1>xyz</h1>
-    <h1>learning github advance</h1>
-    <h2>hello world</h2>
+        <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
 
-    <footer>this is footer</footer>
-    <header>this is header</header>
+    body {
+    font-family: Arial, sans-serif;
+    }
 
-    <h3>section 2222</h3>
-    <h3>section 1</h3>
-    <h1>123</h1>
+    .navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .logo {
+    font-size: 24px;
+    font-weight: bold;
+    }
+
+    .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    }
+
+    .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    }
+
+    .menu-toggle {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+    }
+
+    #image{
+        /* background-color: black; */
+        border: 20px solid black;
+        border-radius: 100%;
+    }
+
+    #image:hover{
+        transform: scale(1.03);
+    }
+
+    /* Mobile View */
+    @media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #444;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 150px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+    }
+
+    </style>
+    </head>
+    <body>
+
+    <nav class="navbar">
+        <div class="logo">MySite</div>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <ul class="nav-links" id="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+<br><br><br><br>
+
+
+    <main>
+        <section style="display: flex; justify-content: space-around; align-items: center;">
+            <div>
+                <h1>Hello Sir Saad</h1>
+            <h3>I am Full Stack Developer</h3>
+            </div>
+            
+
+            <img src="https://avatars.githubusercontent.com/u/52074642?v=4" alt="sir saad" id="image">
+        </section>
+    </main>
+
+
+
+
+
+
 </body>
 
 </html>
